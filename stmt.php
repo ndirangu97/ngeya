@@ -14,25 +14,28 @@ if (is_array($read)) {
 
     foreach ($read as $keys) {
 
-        $month = strtoupper($keys->month);
+              $date = $keys->date;
+$convertDate = date('F jS, Y ', strtotime($date));
+
+     
 
        $table.= "
                     
                      
                      <tr>
-                     <td> $month</td>
+                   
                      <td>$keys->term</td>
                      <td>$keys->fees</td>
                      <td>$keys->paid</td>
                      <td>$keys->balance</td>
                      
                     
-                     <td>$keys->date</td>
+                     <td>$convertDate</td>
                      <td>$keys->time</td> 
                      <td>$keys->clerk</td>
-                     <td>$keys->type</td>
+                     
                      <td>$keys->year</td>
-                     <td style='padding:10px 3px ;'><img onclick='stmtmod(event)' id='$keys->id' src='./images/delete.png' width='15px' height='15px' /></td>
+                   
    
                    </tr>
                    

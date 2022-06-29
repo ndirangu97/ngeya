@@ -1,5 +1,5 @@
 <?php
-// print_r($DATA_OBJECT);
+
 // die;
 
 $m = $DATA_OBJECT->term;
@@ -43,11 +43,11 @@ if (is_array($res)) {
         if ($m == '1') {
 
             $query = false;
-            $query = "UPDATE  pupils SET term1fees=$fees,year=$y WHERE class=$cl  ";
+            $query = "UPDATE  pupils SET term1fees=$fees,term1balance=$fees  WHERE class=$cl  and year=$y";
             $write = $DB->write($query, []);
 
             if ($write) {
-
+                
 
                 $info->message = "Fees  set for Class  $cl Term $m successfully as $fees";
 
@@ -58,7 +58,7 @@ if (is_array($res)) {
             }
         } elseif ($m == '2') {
             $query = false;
-            $query = "UPDATE  pupils SET term2fees=$fees,year=$y WHERE class=$cl  ";
+            $query = "UPDATE  pupils SET term2fees=$fees,term2balance=$fees WHERE class=$cl and year=$y ";
             $write = $DB->write($query, []);
 
             if ($write) {
@@ -73,7 +73,7 @@ if (is_array($res)) {
             }
         } elseif ($m == '3') {
             $query = false;
-            $query = "UPDATE  pupils SET term3fees=$fees,year=$y WHERE class=$cl  ";
+            $query = "UPDATE  pupils SET term3fees=$fees,term3balance=$fees WHERE class=$cl  and year=$y";
             $write = $DB->write($query, []);
 
             if ($write) {
