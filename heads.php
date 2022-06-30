@@ -32,7 +32,6 @@
       
     .content-table{
       border-collapse: collapse;
-      margin: 0;
       font-size: 0.9em;
       height: 80%;
       border-radius: 5px 5px 0 0 ;
@@ -45,12 +44,13 @@
       background: #009879;
       color: #ffffff;
      
-      text-align: left;
+      text-align: center;
       font-weight: bold;
     }
     .content-table th,
     .content-table td{
       padding: 10px 15px;
+      text-align: center;
       
     }
     .content-table tbody tr{
@@ -300,7 +300,7 @@
              
             </div>
 
-            <div id="headModal" style="position: absolute;right: 0;top: 0;height: 100%;width: 400px;z-index: 1;border-top-left-radius: 10px;display: none;flex-direction: column;overflow-y: scroll;border:1px solid #009879;background: #ffffff; ">
+            <div id="headModal" style="position: absolute;right: 0;top: 0;height: 540px;width: 400px;z-index: 1;border-top-left-radius: 10px;display: none;flex-direction: column;overflow-y: scroll;border:1px solid #009879;background: #ffffff; ">
               <div style="flex-basis: 8%;display: flex;margin-bottom: 10px;margin-top: 10px;">
 
                 <div style="display:flex;justify-content: center;align-items: center;width: 100%;position: relative;" >
@@ -309,7 +309,7 @@
                 </div>
                 
               </div>
-              <div style="flex-basis: 8%;display: flex;justify-content: space-around;align-items: center;margin-bottom: 10px;">
+              <div style="flex-basis: 8%;display: flex;justify-content: space-around;align-items: center">
               
                 <div> Year : <input style="width: 80px;height: 30px;border: 1px solid #7c7cff;border-radius: 4px;" type="number" id="hry" min="2019" max="2100"  value="2022" ></div>
                 <div style="display: flex;">

@@ -9,7 +9,7 @@ $cl = $DATA_OBJECT->class;
 $err = "";
 
 $sql = false;
-$sql = "SELECT * FROM pupils WHERE class=$cl and year=$y";
+$sql = "SELECT * FROM pupils WHERE class=$cl and year=$y LIMIT 1";
 $res = $DB->read($sql, []);
 if (is_array($res)) {
     if ($m == '1') {

@@ -232,7 +232,7 @@ if ($class == 'all' && $stream == 'all') {
         $dompdf->render();
 
         // Output the generated PDF to Browser
-        $dompdf->stream("totalactivity.pdf", array("Attachment" => false));
+        $dompdf->stream("schoolbalances.pdf", array("Attachment" => false));
 
 
         //     $info->message = array_sum($arraybal);
@@ -367,9 +367,9 @@ if ($class == 'all' && $stream == 'all') {
             <tbody>
               
             <tr>
-            <th scope='row'>No</th>
-            <td>student</td>
-            <td>found</td>
+            <th scope='row'>0</th>
+            <td>0</td>
+            <td>0</td>
             
           </tr>
               
@@ -420,7 +420,7 @@ if ($class == 'all' && $stream == 'all') {
         $dompdf->render();
 
         // Output the generated PDF to Browser
-        $dompdf->stream("totalactivity.pdf", array("Attachment" => false));
+        $dompdf->stream("schoolbalances.pdf", array("Attachment" => false));
     }
 } elseif ($class != 'all' && $stream == 'all') {
 
@@ -636,7 +636,7 @@ if ($class == 'all' && $stream == 'all') {
         $dompdf->render();
 
         // Output the generated PDF to Browser
-        $dompdf->stream("totalactivity.pdf", array("Attachment" => false));
+        $dompdf->stream("$class"."balances.pdf", array("Attachment" => false));
 
 
         //     $info->message = array_sum($arraybal);
@@ -771,9 +771,9 @@ if ($class == 'all' && $stream == 'all') {
             <tbody>
               
             <tr>
-            <th scope='row'>No</th>
-            <td>student</td>
-            <td>found</td>
+            <th scope='row'>0</th>
+            <td>0</td>
+            <td>0</td>
             
           </tr>
               
@@ -824,7 +824,7 @@ if ($class == 'all' && $stream == 'all') {
         $dompdf->render();
 
         // Output the generated PDF to Browser
-        $dompdf->stream("totalactivity.pdf", array("Attachment" => false));
+        $dompdf->stream("$class"."balances.pdf", array("Attachment" => false));
     }
 } else {
 
@@ -1041,7 +1041,7 @@ if ($class == 'all' && $stream == 'all') {
         $dompdf->render();
 
         // Output the generated PDF to Browser
-        $dompdf->stream("totalactivity.pdf", array("Attachment" => false));
+        $dompdf->stream("$class"."$stream"."balances.pdf", array("Attachment" => false));
 
 
 
@@ -1178,9 +1178,9 @@ if ($class == 'all' && $stream == 'all') {
             <tbody>
               
             <tr>
-            <th scope='row'>No</th>
-            <td>student</td>
-            <td>found</td>
+            <th scope='row'>0</th>
+            <td>0</td>
+            <td>0</td>
             
           </tr>
               
@@ -1231,6 +1231,6 @@ if ($class == 'all' && $stream == 'all') {
         $dompdf->render();
 
         // Output the generated PDF to Browser
-        $dompdf->stream("totalactivity.pdf", array("Attachment" => false));
+        $dompdf->stream("$class"."$stream"."balances.pdf", array("Attachment" => false));
     }
 }

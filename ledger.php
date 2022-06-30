@@ -186,18 +186,6 @@
                     </div>
                     <div class='card' style="flex-basis: 45%;height: 100%;display: flex;justify-content: space-around;
       align-items: center; flex-direction: column;">
-                        <h5>Download Total Balances</h5>
-                        <div style="display: flex;justify-content: space-between;
-      align-items: center; flex-direction: row;">
-                            <input id="act" style="border:1px solid #009879;border-radius:4px;height:30px;width:150px;" type="date" name="" id="">
-                            <button onclick="pallact()" style="padding: 2px 20px;border:1px solid #009879;border-radius:8px;cursor:pointer;background:#7ed2f3;margin-left:30px">Download</button>
-                        </div>
-                    </div>
-                </div>
-                <div style="width: 80%;height:200px;display: flex;justify-content: space-around;
-      align-items: center; flex-direction: row;">
-                    <div class='card' style="flex-basis: 45%;height: 100%;display: flex;justify-content: space-around;
-      align-items: center; flex-direction: column;">
                         <h5>Print Arreas</h5>
                         <div style="display: flex;justify-content: space-between;
       align-items: center; flex-direction: row;">
@@ -240,8 +228,8 @@
 
                         </div>
                     </div>
-                   
                 </div>
+              
 
             </div>
 
@@ -362,6 +350,7 @@
 
 
     }
+
     function pallact54() {
         let c = document.getElementById('class2').value
         let s = document.getElementById('stream2').value

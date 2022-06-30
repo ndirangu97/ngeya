@@ -3,7 +3,7 @@
 $query=false;
 $m=$DATA_OBJECT->month;
 $id=$DATA_OBJECT->id;
-$query="UPDATE pupils set $m=0 WHERE userid='$id'";
+$query="UPDATE pupils set $m=0 ";
 
 $write=$DB->write($query,[]);
 

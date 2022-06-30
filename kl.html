@@ -187,3 +187,40 @@
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+foreach ($res as $key) {
+
+  $topay = ($key->term1fees) + ($key->term3fees) + ($key->term3fees);
+
+  array_push($arrayfees, $topay);
+
+  $mbalance = ($key->term1balance) + ($key->term2balance) + ($key->term3balance);
+  array_push($arraybal, $mbalance);
+
+  $paid =  ($key->term1paid) + ($key->term2paid) + ($key->term3paid);
+  array_push($arraypaid, $paid);
+  if ($mbalance>0) {
+      $i++;
+      $tb.="
+      
+      <tr>
+  <th scope='row'>$i</th>
+  <td>$key->name</td>
+  <td>$mbalance</td>
+  
+</tr>
+      ";
+  }
+}
